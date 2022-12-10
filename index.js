@@ -13,7 +13,8 @@ const upload = multer({
 		},
 	}),
 });
-const port = process.env.PORT || 8080;
+/* const port = process.env.PORT || 8080; */
+const port = 8080;
 
 app.use(express.json());
 app.use(cors());
@@ -48,13 +49,13 @@ app.get("/products/:id", function (req, res) {
 		})
 		.catch((err) => {
 			console.error(err);
-			res.send("상품조회시 에러가 발생했습니다.");
+			res.status(400).send("상품조회시 에러가 발생했습니다");
 		});
 });
 
 app.post("/products", function (req, res) {
 	const body = req.body;
-	const { name, description, price, seller, } = body;
+	const { name, description, price, seller, imageUrl } = body;
 	if (!name || !description || !price || !seller) {
 		res.send("모든 필드를 입력해주세요");
 	}
@@ -63,19 +64,22 @@ app.post("/products", function (req, res) {
 		description,
 		price,
 		seller,
+		imageUrl 
 	})
 		.then((result) => {
-			console.log("상품생성결과:", result);
+			/* console.log("상품생성결과:", result); */
+			res.send({
+				product: result,
+			});
 		})
 		.catch((err) => {
 			console.error(err);
-			res.send("상품업로드에 문제가 발생했습니다");
+			res.status(400).send("상품 업로드에 문제가 발생했습니다.");
 		});
 });
 
 app.post("/image", upload.single("image"), (req, res) => {
 	const file = req.file;
-	console.log(file);
 	res.send({
 		imageUrl: file.path,
 	});
