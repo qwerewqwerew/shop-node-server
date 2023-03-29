@@ -7,19 +7,17 @@
 ## 백엔드 깃허브 [🔗리액트앱][http://naver.com]
 
 [![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
 [![Node.js Version][node-version-image]][node-version-url]
 [![Build Status][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
 한 두 문단으로 프로젝트 소개 글을 작성합니다.
 
 ![](https://user-images.githubusercontent.com/59301948/228405191-ed95070c-8f59-4b44-aa08-9b54cefce94d.jpg)
 
-## <span style="color:red">설치 방법</span>
-<hr/>
+## 설치 방법
 
- <span style="color:red">리액트 앱 설치</span>
+리액트 앱 설치
 
 ```sh
 
@@ -86,3 +84,4 @@ XYZ 라이센스를 준수하며 ``LICENSE``에서 자세한 정보를 확인할
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [wiki]: https://github.com/yourname/yourproject/wiki
+[node-version-url]: http://nodejs.org/download/
