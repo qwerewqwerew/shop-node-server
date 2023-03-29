@@ -7,6 +7,7 @@
 ## 백엔드 깃허브 [🔗리액트앱][http://naver.com]
 
 [![NPM Version][npm-image]][npm-url]
+[![Node.js Version][node-version-image]][node-version-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
