@@ -17,7 +17,7 @@
 ## <span style="color:red">설치 방법</span>
 <hr/>
 
-리액트 앱 설치
+ <span style="color:red">리액트 앱 설치</span>
 
 ```sh
 
