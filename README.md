@@ -14,7 +14,8 @@
 
 ![](https://user-images.githubusercontent.com/59301948/228405191-ed95070c-8f59-4b44-aa08-9b54cefce94d.jpg)
 
-## 설치 방법
+## <span style="color:red">설치 방법</span>
+<hr/>
 
 리액트 앱 설치
 
